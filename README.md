@@ -1,146 +1,97 @@
-# ZYVO — Everything. Just Faster.
-### Premium Quick-Commerce & On-Demand Local Services Platform
+# ROCKETTREE – Everything. One Destination.
 
-**Tagline:** Everything. Just Faster.  
-**Theme Palette:** Electric Lime Green (`#C5FF55`), Midnight Black (`#101510`), Clean White (`#FFFFFF`), Emerald Green (`#16A34A`), and Dark Card Slate (`#161D16`).
+Official digital all-in-one marketplace website engineered for Indian semi-urban and rural commerce, bridging consumers and local businesses with direct **WhatsApp Ordering** (+91 9565305601).
 
 ---
 
-## ⚡ Overview & Features
+## 🚀 1. Brand Identity & Colours
 
-ZYVO is a complete, production-ready quick-commerce and on-demand local services platform inspired by modern dark-store speed, with custom branding, layout, database models, and order lifecycle management.
+- **Brand:** ROCKETTREE
+- **Tagline:** Everything. One Destination.
+- **Brand Colours:**
+  - Navy Blue: `#102A43`
+  - Orange: `#FF7A1A`
+  - Green: `#20A464`
+  - White: `#FFFFFF`
+  - Background: `#F5F7FA`
+  - Text: `#182230`
 
-### Key Highlights
-1. **Express Quick-Commerce Storefront**:
-   - 15-25 minute lightning delivery promise for local dark store clusters.
-   - Dynamic catalog with categories, variants (size, weight, pack, colour), MRP, selling price, and automatic discount calculation.
-   - Real-time search with live dropdown suggestions and instant ADD/stepper buttons.
-   - Local delivery PIN code selector (e.g., `226010`, `226001`, `110001`, `560001`, `400001`).
-   - Coupon management system (`ZYVOFAST` for 20% OFF, `FIRST50` for flat ₹50 OFF).
-   - Free delivery threshold calculation (Orders ₹499+ get free delivery).
-   - Server-side authoritative price and stock validation (prevents client-side price manipulation).
-
-2. **On-Demand Local Services**:
-   - Booking for AC Jet Deep Cleaning, Electrician On-Demand, Plumbing & Leakage Repair, Home Deep Cleaning, and Appliance Repair.
-   - Date & time slot picker with customer location details.
-   - Instant booking dispatch and unique booking reference ID.
-
-3. **MOST IMPORTANT: Automated WhatsApp Notifications**:
-   - **Target Admin/Owner Phone**: `+91 8081529714` (normalized: `918081529714`).
-   - Every single customer order automatically triggers a server-side notification containing complete customer details, itemized breakdown with variants, prices, delivery instructions, and payment status.
-   - Service bookings similarly dispatch an immediate technician assignment notice.
-   - **Multi-Provider Support**:
-     1. Official Meta WhatsApp Cloud API (Graph API)
-     2. Twilio WhatsApp API
-     3. Custom Webhook / Gateway
-   - **Quick-Start Direct Fallback**: Generates direct `wa.me` links populated with full formatted order text so customers or administrators can open WhatsApp with 1 tap.
-   - Full notification audit log table with retry button in the admin panel. Orders are never lost or canceled if external WhatsApp network delivery encounters an issue.
-
-4. **Customer Authentication & Verification**:
-   - Indian mobile number (+91) with phone OTP verification flow.
-   - Email and password login/registration.
-   - Customer profile with saved delivery addresses.
-   - Clear setup status messages if third-party SMS gateway is in test mode.
-
-5. **Secure Administrator Control Panel (`/admin`)**:
-   - Protected by role-based access control (`role === "ADMIN"`).
-   - Real-time analytics: Total revenue, today's orders, pending/confirmed/delivered counts, low stock alerts, WhatsApp failure counts.
-   - Searchable Orders Management table with order details modal, status updates, invoice printing, and **Retry WhatsApp Notification** button.
-   - Products Catalog management with multi-image URLs, variants, SKU, price/MRP, stock, bestseller flags.
-   - Local Services and Service Bookings manager.
-   - Serviceable Delivery PIN Codes manager with delivery fee and minimum order value settings.
-   - Promotional Hero Banners and Coupon manager.
-   - WhatsApp Integration Center with live test message sender and audit logs.
+Official logo embedded from user assets to `/public/images/rockettree-logo.jpg`.
 
 ---
 
-## 🛠️ Tech Stack
+## 📱 2. Universal WhatsApp Ordering System
 
-- **Frontend & Server**: Next.js 14 (App Router) + TypeScript + Tailwind CSS
-- **Database & ORM**: Prisma ORM with SQLite (embedded `prisma/dev.db` ready out of the box, zero external setup needed; fully compatible with PostgreSQL / Supabase)
-- **Icons & UI**: Lucide React + Canvas Confetti
-- **Authentication**: JWT HTTP-only cookies + bcryptjs password hashing
-- **WhatsApp Dispatch**: Meta WhatsApp Cloud API / Twilio / Direct `wa.me` fallback
+- **Official WhatsApp Business Hotline:** `+91 9565305601`
+- **Link Protocol:** `https://wa.me/919565305601?text=ENCODED_MESSAGE`
+- **Enforced Official Acceptance Notice:**
+  > *"Your order request will be sent to ROCKETTREE. Our team will confirm availability, final charges and order acceptance."*
+- Every product card, cart checkout, restaurant dish, technician booking, worker hire, job application, and manpower demand has direct WhatsApp link generation and backend database persistence.
 
 ---
 
-## 🚀 Quick Start Guide
+## 📍 3. Initial Operational Hub
 
-### 1. Prerequisites
-- Node.js v18+ (tested on Node v20/v24)
-- npm
+- **PIN Code:** `221101`
+- **Village:** Dharsauna
+- **Block:** Cholapur
+- **District:** Varanasi
+- **State:** Uttar Pradesh
+- **Country:** India
+- Dynamic PIN verification modal with serviceable indicators for PIN 221101 & 221104, and *"ROCKETTREE is coming soon to your location!"* for unserved PIN codes.
 
-### 2. Installation
+---
+
+## 🛒 4. Marketplace Modules
+
+1. **Shopping Mall (`/shopping`):** Men's fashion, women's fashion, electronics, smartwatches, home & kitchen, mobile accessories.
+2. **Fresh Grocery (`/grocery`):** Dharsauna Kisan Mandi & Fresh Mart (milk, curd, paneer, vegetables, atta, pulses).
+3. **Food Delivery (`/food`):** Varanasi Dhaba & Family Restaurant, Banaras Biryani & Kebabs with Veg/Non-Veg badges.
+4. **Home Services (`/services`):** Electrician, plumber, split/window AC repair, RO servicing, house painting.
+5. **Labour & Workers (`/labour`):** Masons (Mistri), construction helpers, carpenters, drivers, electricians with daily wage cards.
+6. **Local Jobs (`/jobs`):** Warehouse supervisors, bike delivery riders, billing executives with instant WhatsApp apply.
+7. **Bulk Manpower (`/manpower`):** Enterprise recruitment requisition form.
+8. **Digital Services (`/digital-services`):** Freelance logos, website development, video editing, ATS resumes, SEO.
+9. **Cart & WhatsApp Checkout (`/cart`):** Unified cart with free delivery calculation above ₹499.
+10. **Central Admin Panel (`/admin`):** Live dashboard, order status tracking, PIN code management, WhatsApp settings.
+11. **Customer Account (`/account`):** Live order tracking, default address.
+12. **Legal Trust Pages:** `/about`, `/contact`, `/privacy`, `/terms`, `/refund-policy`, `/shipping-policy`.
+
+---
+
+## 🔑 5. Demo Credentials
+
+- **Central Admin:**
+  - Email: `admin@rockettree.in`
+  - Password: `admin123`
+- **Customer Account:**
+  - Email: `rahul.varanasi@gmail.com`
+  - Password: `customer123`
+
+---
+
+## 🛠️ 6. Technology Stack & Running Locally
+
+- **Framework:** Next.js 14 (App Router) + TypeScript
+- **Styling:** Tailwind CSS + Lucide React Icons
+- **Database:** Prisma ORM with SQLite (`prisma/dev.db`) — seamlessly switchable to PostgreSQL by updating `DATABASE_URL` in `.env`.
+- **Authentication:** Bcrypt password hashing + JWT tokens.
+
 ```bash
-# Clone or navigate to the project directory
-cd "my group website"
+# Install dependencies
+npm.cmd install
 
-# Install dependencies (already pre-installed)
-npm install
-```
+# Sync database
+npx.cmd prisma db push
 
-### 3. Initialize Database & Seed Demo Data
-```bash
-# Push Prisma schema to SQLite database (dev.db)
-npx prisma db push
-
-# Seed products, categories, services, delivery PIN codes, and initial sample order
+# Seed initial hub data
 node prisma/seed.js
+
+# Build production bundle
+npm.cmd run build
+
+# Start live server
+npm.cmd start
 ```
 
-### 4. Start Development Server
-```bash
-npm run dev
-```
-Open **[http://localhost:3000](http://localhost:3000)** in your browser.
-
----
-
-## 🔑 Default Credentials
-
-### Store Administrator:
-- **Email:** `admin@zyvo.com`
-- **Password:** `admin123`
-- **Phone:** `+918081529714`
-- **Admin Dashboard URL:** [http://localhost:3000/admin](http://localhost:3000/admin)
-
-### Demo Customer:
-- **Email:** `customer@zyvo.com`
-- **Password:** `customer123`
-- **Phone:** `+919876543210`
-
----
-
-## 📱 How to Configure Official WhatsApp Cloud API
-
-To receive automatic background notifications directly on WhatsApp number **+91 8081529714**:
-
-1. Go to [Meta for Developers](https://developers.facebook.com/) and log in with your Facebook account.
-2. Click **My Apps** &gt; **Create App** &gt; Select **Other** &gt; Choose **Business**.
-3. Under Add Products to Your App, click **Set up** on **WhatsApp**.
-4. In the left navigation, go to **WhatsApp** &gt; **API Setup**:
-   - Copy the **Phone number ID**.
-   - Copy the **Temporary Access Token** (or create a permanent System User token in Business Manager &gt; System Users with `whatsapp_business_messaging` permission).
-   - In the "To" field on Meta dashboard, add and verify your phone number **+91 8081529714**.
-5. Open your ZYVO Admin Panel at **`/admin/whatsapp`**:
-   - Set Provider to **Meta WhatsApp Cloud API**.
-   - Paste your **Phone Number ID**.
-   - Paste your **Access Token**.
-   - Click **Save Configuration**.
-   - Click **Send Test WhatsApp Message** to verify live delivery to `+91 8081529714`!
-
----
-
-## 📦 Deployment Guide (Vercel / VPS / Cloud)
-
-### Deploying to Vercel:
-1. Push this repository to GitHub or GitLab.
-2. In Vercel, import the repository.
-3. If using Supabase / PostgreSQL:
-   - Change `provider = "postgresql"` in `prisma/schema.prisma`.
-   - Set environment variable `DATABASE_URL="postgres://..."`.
-4. Add environment variables:
-   - `JWT_SECRET`
-   - `WHATSAPP_RECIPIENT_PHONE="+918081529714"`
-   - `WHATSAPP_CLOUD_API_TOKEN` & `WHATSAPP_CLOUD_PHONE_NUMBER_ID` (if using Meta Cloud API)
-5. Deploy! Vercel will automatically build the Next.js application.
+Website running live at: **http://localhost:3000**
